@@ -1,0 +1,253 @@
+/*Estilização do Geral*/
+* {
+   margin: 0px;
+   padding: 0px;
+   
+}
+
+/*Estilização do corpo da página*/
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   background: #0099A3;
+  }
+
+a {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li{
+  transition: all 0.2s;
+  box-sizing:content-box;
+  padding: 7px;
+}
+li:hover{
+   transform: scale(1.1);
+}
+
+.select {
+  width: 100%;
+   color: #f7f7f7;
+   mix-blend-mode: luminosity;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo { 
+   top: 0px; 
+}
+.logo img{
+   transition: all 0.2s;
+   max-width: 100%;
+}
+.logo:hover img{
+   transform: scale(1.1);
+}
+.step-banner {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.step-banner .title {
+  position: absolute;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  color: #0099A3;
+  top: 120px;
+  left: 100px;
+  right: 100px;
+}
+
+.step-banner .text {
+  position: absolute;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  color: #052527;
+  top: 170px;
+  left: 100px;
+  right: 100px;
+}
+
+.step-petsdisponiveis{ 
+  padding: 30px;
+}
+.step-petsdisponiveis .title{ 
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: bold;
+   color: #042C3E;
+}
+
+
+.flex{
+  width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1060px;
+   margin: 0 auto;
+   top: 200px;
+}
+.flex > div {
+   flex: 1 1 200px;
+   margin: 10px;
+}
+
+.step-adote{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-evenly
+}
+.step-adote .item-step {
+   width: 15%;
+   margin-bottom: 2rem;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.step-adote .item-step .icon {
+   margin: 0px auto 1.25rem;
+   width: 89px;
+   height: 89px
+}
+.step-adote .item-step .title {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 0.5rem;
+   font-weight: bold;
+   color: #042C3E;
+}
+.step-adote .item-step .text {
+   width: 100%;
+   text-align: center;
+   color: rgb(117, 117, 117);
+}
+
+.about-adote {
+   text-align: center;
+   margin-top: 2.5rem;
+   padding: 0px 40px 0px 40px;
+}
+.about-adote .tagline{
+   font-size: 0.875rem;
+   line-height: 24px;
+   letter-spacing: 0px;
+   color: rgb(117, 117, 117);
+   font-weight: 500;
+}
+.about-adote .title{
+   font-size: 1.2rem;
+   line-height: 100px;
+   color: #042C3E;
+   font-weight: 500;
+}
+
+.question {
+  
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.gridcontainer{
+ 
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
+.question .item-question {
+ 
+  z-index: 1;
+  background:#0099A3;
+  color: rgb(251, 251, 249);
+  box-shadow: rgb(0 0 0 / 16%) 0px 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.question .tagline {
+  font-size: 0.875rem;
+  line-height: 25px;
+  max-width: 458px;
+  margin: 0px auto 1.875rem;
+}
+.question .item-question a {
+  padding: 18px 44px;
+  background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+  border-radius: 6px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: rgb(117, 117, 117);
+}
+
+/*Estilização do rodapé*/
+
+footer{
+   padding: 80px;
+   align-items: center;
+   background: #FFBF00;
+}
+
+footer{
+  padding: 80px;
+  background: #FFBF00;
+}
+.rodape{
+  padding: 30px;
+  padding-left: 35%;
+}
+/*Responsividade*/
+
+@media screen and (max-width: 600px){
+  body {
+     padding: 0px;
+  }
+
+  header{
+    position:absolute;
+     padding: 0px;
+     flex-wrap: wrap;
+  }
+
+  ul {
+     margin-top: 80px; 
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+
+
+ .step-banner{
+  flex-wrap: wrap;
+  position:unset;
+  padding: 0%;
+  
+ }
+}
